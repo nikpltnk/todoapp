@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="todo-app" class="container"></div>
+    <script type="module">
+        import { initTodoApp } from './todoController.js';
+    
+        document.addEventListener('DOMContentLoaded', function () {
+            initTodoApp('todo-app', 'Мои дела', ['Сходить в магазин', 'Позвонить начальнику', 'Сходить в спортзал']);
+        });
+    </script>
+    
+</body>
+</html>
